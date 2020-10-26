@@ -43,10 +43,10 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          <Link className={classes.homeLink} to="/">My Store!</Link>
+          <Link className={classes.homeLink} to="/">Garage Store</Link>
         </Typography>
 
         {auth && (
