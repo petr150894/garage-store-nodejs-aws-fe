@@ -14,6 +14,7 @@ frameworkVersion: '2'
 provider:
   name: aws
   runtime: nodejs12.x
+  stage: develop
 
 plugins:
   - serverless-finch
@@ -24,7 +25,6 @@ custom:
   client:
     bucketName: web-garage-app
     distributionFolder: build
-    region: eu-west-1
 
   ## Serverless-single-page-app-plugin configuration:
   s3LocalPath: ${self:custom.client.distributionFolder}/
