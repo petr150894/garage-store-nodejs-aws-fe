@@ -53,6 +53,9 @@ export default function Products() {
               <Typography gutterBottom variant="h5" component="h2">
                 {product.title}
               </Typography>
+              <Typography variant="subtitle2" gutterBottom>
+                {product.description}
+              </Typography>
               <Typography>
                 {formatAsPrice(product.price)}
               </Typography>
