@@ -19,13 +19,14 @@ export default function PageProductImport() {
 
   return (
     <div className={classes.content}>
+      <CSVFileImport url={`${API_PATHS.import}/import/products`} title="Import Products CSV"/>
       <Box display="flex" alignItems="center">
-        <CSVFileImport url={`${API_PATHS.import}/product/import`} title="Import Products CSV"/>
         <Button size="small" color="primary" variant="contained" component={Link} to={'/admin/product-form/'}>
           create product
         </Button>
       </Box>
-      <ProductsTable/>
+
+      {/* <ProductsTable/> */}
     </div>
   );
 }
