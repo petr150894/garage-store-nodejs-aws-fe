@@ -15,6 +15,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   stage: develop
+  region: eu-west-1 
 
 plugins:
   - serverless-finch
@@ -23,7 +24,7 @@ plugins:
 custom:
   ## Serverless-finch configuration
   client:
-    bucketName: web-garage-app
+    bucketName: garage-store-app-fe
     distributionFolder: build
 
   ## Serverless-single-page-app-plugin configuration:
